@@ -2,8 +2,6 @@
 
 A 3D cyber SF drift simulator for X680x0
 
-<img src='images/flyer.png' width='800px'/>
-
 ---
 
 ## About This
@@ -107,3 +105,11 @@ ZMUSIC V2 `ZMUSIC.X` を常駐させます。
 ## 変更履歴
 
 * 0.4.0 (2026/06/13) ... 初版
+
+---
+
+## フライヤー
+
+* ChatGPTで生成
+
+<img src='images/flyer.png' width='800px'/>
