@@ -1,2 +1,108 @@
-# mtland
+# MUTE LAND
+
 A 3D cyber SF drift simulator for X680x0
+
+<img src='images/flyer.png' width='800px'/>
+
+---
+
+## About This
+
+ハイスピード・ドリフトシミュレータです。
+
+ <img src='images/screen1.jpeg' width='800px'/>
+
+X68030 + 060turbo または X68000 + PhantomX のいずれかで動作します。サイバースティックにも対応しています。
+
+---
+
+## 動作環境
+
+* X68030実機 + 060turbo
+
+コピーバックモードを使用してください。(060turbo.sysに`-cm1`を指定)
+ハイメモリが最低32MB必須です。
+
+060コピーバックモードに対応したZMUSIC V2が必要です。
+
+MZL氏によるパッチ版2.08eを使用してください。
+- http://retropc.net/x68000/software/sound/zmusic/zmusic2/
+
+サイバースティックを利用する場合は `AJOY.X` を常駐させます。HUYE氏による060対応パッチを適用してください。
+- http://retropc.net/x68000/software/hardware/analog/ajoy/
+- http://park7.wakwak.com/~huye/x68000_joy.html
+
+
+* X68000実機 + PhantomX
+
+Pi4B + ライトバックモードを使用し、060turbo互換ハイメモリを有効にしてください。
+
+はう氏のハイメモリドライバ TS16DRVp の常駐が必要です。
+- https://haumea.x68kbbs.com/
+
+サイバースティックを利用する場合は `AJOY.X` を常駐させます。
+- http://retropc.net/x68000/software/hardware/analog/ajoy/
+
+---
+
+## 遊び方
+
+ZIPアーカイブファイルを展開し、`*.MTL`, `*.LUT`, `*.ZMD`, `MTLAND*.X` がカレントディレクトリにあることを確認します。
+
+PhantomXの場合は `TS16DRVp.X` を常駐させます。
+
+ZMUSIC V2 `ZMUSIC.X` を常駐させます。
+
+サイバースティックを利用する場合は `AJOY.X` を常駐させます。
+
+060turboの場合は`MTLAND060.X`、PhantomXの場合は`MTLAND.X`を起動します。
+
+
+<img src='images/screen4.jpeg' width='800px'/>
+
+ゲームを起動すると、初期コース選択画面になります。3コースのうちどれか一つをレバーやパッド方向キーで選択し、ボタンを押すと決定になります。
+
+コースデータのロードが終わると加速待ちの状態からスタートします。最初にスタートラインを切ったところからカウントが始まります。
+
+基本的にタイムアタックをするゲームではなく、いかにドリフトを深いアングルかつロングストロークで、コースからはみ出さないようにして決め、ポイントを稼ぐのが目的です。もちろんタイムを狙うのも自由です。
+
+<img src='images/screen5.jpeg' width='800px'/>
+
+5ラップするとゴールでリザルトが表示されます。3コースすべて走り終わると総合ポイントが表示され、ゲーム終了となります。
+
+---
+
+## コース紹介
+
+### 1. MUTE LAND
+
+<img src='images/screen1.jpeg' width='800px'/>
+
+トワイライトの近未来都市ステージです。道幅も広く、練習にはうってつけです。裏ストレートエンドのシケインにあるデルタダートと縁石の隙間を狙ってみるのもよいでしょう。
+
+
+### 2. BIG OCEAN
+
+<img src='images/screen2.jpeg' width='800px'/>
+
+洋上に設置されたステージです。道幅が狭いため、ドリフトを決めるのは大変かもしれません。最終コーナーには水が乗っており、滑ります。
+
+
+### 3. SAND STORM
+
+<img src='images/screen3.jpeg' width='800px'/>
+
+砂漠ステージです。オリエンタルで哀愁あるBGMをバックに雰囲気を楽しんでみてください。ヘアピンはかなりの難所です。
+
+---
+
+## 開発環境
+
+ - efl2x68k (Thanks to Yunkさん)
+ - XEiJ (Thanks to M.Kamadaさん)
+
+---
+
+## 変更履歴
+
+* 0.4.0 (2026/06/13) ... 初版
