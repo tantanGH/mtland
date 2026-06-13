@@ -32,6 +32,7 @@ MZL氏によるパッチ版2.08eを使用してください。
 - http://retropc.net/x68000/software/hardware/analog/ajoy/
 - http://park7.wakwak.com/~huye/x68000_joy.html
 
+---
 
 * X68000実機 + PhantomX
 
