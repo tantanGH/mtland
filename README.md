@@ -108,8 +108,4 @@ ZMUSIC V2 `ZMUSIC.X` を常駐させます。
 
 ---
 
-## フライヤー
-
-* ChatGPTで生成
-
 <img src='images/flyer.png' width='800px'/>
