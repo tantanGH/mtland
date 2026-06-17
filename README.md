@@ -30,6 +30,14 @@ MZL氏によるパッチ版2.08eを使用してください。
 - http://retropc.net/x68000/software/hardware/analog/ajoy/
 - http://park7.wakwak.com/~huye/x68000_joy.html
 
+または、同HUYE氏の`JOYDRV3.X`を使用してください。
+
+`JOYDRV.CNF`設定例：
+
+    DEVICE=2:\CYBERSTK.JOY
+    SETMODE=0:2:0
+    WAIT=2:0:300
+
 ---
 
 * X68000実機 + PhantomX
